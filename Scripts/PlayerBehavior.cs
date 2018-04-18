@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour {
 	public Animator anim; 
 	public GameObject text;
-//	public Collision collision = new Collision();
 	public static float PlayerHealth = 100.0f; 
 	public bool isBeingAttacked = false;
 	public float delay = 2.0f;

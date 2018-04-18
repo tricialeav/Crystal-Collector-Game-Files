@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GetCrystal : MonoBehaviour {
 
-//	float score = CalculateScore.score;
 	public static float newScore; 
 
 

@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour {
 	public float delay = 3.0f;
-//	public Rigidbody rb;
 	public Animator anim; 
 	public static bool attacking = false; 
-//	public Vector3 position; 
-//	public GameObject enemy; 
- 
-//	public Transform PlayerTransform; 
 
 	IEnumerator MyMethod() {
-//		Debug.Log ("Wait 3 seconds");
 		yield return new WaitForSeconds (delay);
 		attacking = false; 
 		yield break;
@@ -21,7 +15,6 @@ public class EnemyBehavior : MonoBehaviour {
 
 	void Start()
 	{
-//		rb = GetComponent<Rigidbody>();
 		anim.Play ("Idle");
 	}
 

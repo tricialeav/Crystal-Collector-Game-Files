@@ -13,7 +13,7 @@ public class CalculateScore : MonoBehaviour {
 	{
 		crystals = GameObject.FindGameObjectsWithTag("Pick Up");
 		score = crystals.Length;
-		GetComponent<TextMesh>().text="Crystals Left: " + score;
+		GetComponent<TextMesh>().text="Crystals Remining: " + score;
 	}
 
 	void Update() {
