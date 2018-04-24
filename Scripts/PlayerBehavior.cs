@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour {
 	public Animator anim; 
@@ -17,8 +18,10 @@ public class PlayerBehavior : MonoBehaviour {
 			yield break;
 		} else {
 			anim.Play ("Death"); 
-			yield return new WaitForSeconds (delay);
 			text.GetComponent<TextMesh>().text = "Game Over";
+			yield return new WaitForSeconds (delay);
+			SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+			PlayerHealth = 100.0f;
 		}
 	}
 
@@ -49,6 +52,6 @@ public class PlayerBehavior : MonoBehaviour {
 			} else if (!isBeingAttacked) { 
 				anim.Play ("Wait");
 			}
-	}
+		}
 	}
 }

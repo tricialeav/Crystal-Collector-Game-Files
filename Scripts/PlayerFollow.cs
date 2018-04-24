@@ -17,7 +17,6 @@ public class PlayerFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_cameraOffset = transform.position - PlayerTransform.position; 
-
 	}
 	
 	// Update is called once per frame
@@ -38,5 +37,4 @@ public class PlayerFollow : MonoBehaviour {
 		if (LookAtPlayer || RotateAroundPlayer)
 			transform.LookAt (PlayerTransform);
 	}
-
 }

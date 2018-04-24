@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GetCrystal : MonoBehaviour {
-
 	public static float newScore; 
 
 
